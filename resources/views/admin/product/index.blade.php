@@ -44,13 +44,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {{-- @php
-                            dd($courses[2]->category);
-                            die;
-                        @endphp --}}
+       
                         @foreach ($products as $product)
                         <tr>
                             <td>{{$product->title}}</td>
+                            
                             <td>{{$product->category->title}}</td>
                             <td><img src="{{asset('uploads/product/'.$product->image)}}" alt="" height="32"></td>
                             <td>{{$product->created_at->format('d/m/Y')}}</td>

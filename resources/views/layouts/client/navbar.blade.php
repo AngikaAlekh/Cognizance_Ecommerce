@@ -12,7 +12,7 @@
                   <nav class="header__menu">
                       <ul>
                           <li class="active"><a href="./index.html">Home</a></li>
-                          <li><a href="./shop-grid.html">Shop</a></li>
+                          <li><a href="{{route('shop')}}">Shop</a></li>
 
                           <!-- <li><a href="./blog.html">Blog</a></li> -->
                           @if(Auth::user())

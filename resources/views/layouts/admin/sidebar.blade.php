@@ -26,26 +26,26 @@
     </li>
 
     <!-- Divider -->
-    {{-- <hr class="sidebar-divider"> --}}
+    <hr class="sidebar-divider">
 
     <!-- Heading -->
-    {{-- <div class="sidebar-heading">
+    <div class="sidebar-heading">
         Home
-    </div> --}}
+    </div>
 
-    {{-- <li class="nav-item {{ Request::is('admin/featured/courses') || Request::is('admin/featured/categories') ? 'active' : '' }}">
-        <a class="nav-link {{ Request::is('admin/featured/courses') || Request::is('admin/featured/categories') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapseFeatured"
-            aria-expanded="{{ Request::is('admin/featured/courses') || Request::is('admin/featured/categories') ? true : false }}" aria-controls="collapseFeatured">
+    <li class="nav-item {{ Request::is('admin/featured/products') || Request::is('admin/featured/categories') ? 'active' : '' }}">
+        <a class="nav-link {{ Request::is('admin/featured/products') || Request::is('admin/featured/categories') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapseFeatured"
+            aria-expanded="{{ Request::is('admin/featured/products') || Request::is('admin/featured/categories') ? true : false }}" aria-controls="collapseFeatured">
             <i class="fas fa-fw fa-cog"></i>
             <span>Featured</span>
         </a>
-        <div id="collapseFeatured" class="collapse {{ Request::is('admin/featured/courses') || Request::is('admin/featured/categories') ? 'show' : '' }}" aria-labelledby="headingFeatured" data-parent="#accordionSidebar">
+        <div id="collapseFeatured" class="collapse {{ Request::is('admin/featured/products') || Request::is('admin/featured/categories') ? 'show' : '' }}" aria-labelledby="headingFeatured" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item {{ Request::is('admin/featured/courses') ? 'active' : '' }}" href="{{ url('/admin/featured/courses') }}">Courses</a>
+                <a class="collapse-item {{ Request::is('admin/featured/products') ? 'active' : '' }}" href="{{ url('/admin/featured/products') }}">Products</a>
                 <a class="collapse-item {{ Request::is('admin/featured/categories') ? 'active' : '' }}" href="{{ url('/admin/featured/categories') }}">Categories</a>
             </div>
         </div>
-    </li> --}}
+    </li>
 
 
 

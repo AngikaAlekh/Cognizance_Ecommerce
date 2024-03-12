@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 use App\Models\Product;
+use App\Models\FeaturedCategory;
 
 class Category extends Model
 {
@@ -25,6 +26,10 @@ class Category extends Model
 
     public function products(){
         return $this->hasMany(Product::class, 'category_id', 'id');
+    } 
+
+    public function featured_categories(){
+        return $this->hasMany(FeaturedCategory::class, 'category_id', 'id');
     } 
 
 }
